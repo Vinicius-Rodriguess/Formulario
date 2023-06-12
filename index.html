@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <section id="container">
+        <div id="fundo">
+            <div id="texto">
+                <h1>LOGIN</h1>
+                <p>Preencha os campos abaixo corretamente!</p>
+            </div>
+            <form id="login-form">
+                <div class="dentro-form">
+                    <label for="username">Usuário:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="dentro-form">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div id="selecao">
+                    <span>
+                        <select id="departamento" name="departamento">
+                            <option value="">Selecione o departamento</option>
+                            <option value="Produção">Produção</option>
+                            <option value="RH">RH</option>
+                            <option value="Contábil">Contábil</option>
+                        </select>
+                    </span>
+                    <span>
+                        <select id="centro" name="centro">
+                            <option value="">Selecione o centro</option>
+                            <option value="Centro 1">Centro 1</option>
+                            <option value="Centro 2">Centro 2</option>
+                            <option value="Centro 3">Centro 3</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="dentro-form">
+                    <button type="submit" id="entrar">Entrar</button>
+                </div>
+            </form> 
+            <div class="dentro-form">
+                <button id="esqueci-senha">Esqueci a senha!</button>
+            </div>
+        </div>
+    </section>
