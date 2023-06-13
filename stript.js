@@ -1,3 +1,9 @@
+
+
+function esqueci(){
+    alert('Parabens!! favor entrar em contato com o suporte.');
+}
+
 document.getElementById('login-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -29,3 +35,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
 
     this.submit();
 });
+
+
+
+

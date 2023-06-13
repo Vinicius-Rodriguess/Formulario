@@ -65,11 +65,17 @@ input {
     background-color: transparent;
     padding: 3px;
     outline: none;
+    color: white;
 }
 
 .dentro-form {
     margin: 15px;
     text-align: center;
+}
+
+.dentro-form-info {
+    margin: 15px;
+    
 }
 
 #texto {
