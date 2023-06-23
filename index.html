@@ -17,16 +17,15 @@
             <form id="login-form">
                 <div class="dentro-form-info">
                     <label for="username">Usuário:</label>
-                    <input type="text" id="username" name="username" required>
+                    <input type="text" id="username" name="username">
                 </div>
                 <div class="dentro-form-info">
                     <label for="password">Senha:</label>
-                    <input type="password" id="password" name="password" required>
+                    <input type="password" id="password" name="password">
                 </div>
                 <div id="selecao">
                     <span>
                         <select id="departamento" name="departamento">
-                            <option value="">Selecione o departamento</option>
                             <option value="Produção">Produção</option>
                             <option value="RH">RH</option>
                             <option value="Contábil">Contábil</option>
@@ -34,7 +33,6 @@
                     </span>
                     <span>
                         <select id="centro" name="centro">
-                            <option value="">Selecione o centro</option>
                             <option value="Centro 1">Centro 1</option>
                             <option value="Centro 2">Centro 2</option>
                             <option value="Centro 3">Centro 3</option>
@@ -42,9 +40,10 @@
                     </span>
                 </div>
                 <div class="dentro-form">
-                    <button type="submit" id="entrar">Entrar</button>
+                    <button type="button" id="entrar" onclick="enviar()">Entrar</button>
                 </div>
             </form> 
+            <div class="erro"></div>
             <div class="dentro-form">
                 <button id="esqueci-senha" onclick="esqueci()">Esqueci a senha!</button>
             </div>
