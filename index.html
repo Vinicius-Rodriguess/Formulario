@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,15 @@
     <title>Formulario</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
     <section id="container">
         <div id="fundo">
-            <div id="texto">
-                <h1>LOGIN</h1>
-                <p>Preencha os campos abaixo corretamente!</p>
-            </div>
             <form id="login-form">
+                <div id="texto">
+                    <legend>LOGIN</legend>
+                    <p>Preencha os campos abaixo corretamente!</p>
+                </div>
                 <div class="dentro-form-info">
                     <label for="username">Usuário:</label>
                     <input type="text" id="username" name="username">
@@ -42,11 +44,11 @@
                 <div class="dentro-form">
                     <button type="button" id="entrar" onclick="enviar()">Entrar</button>
                 </div>
-            </form> 
-            <div class="erro"></div>
+            </form>
+            <div class="diverro"><p class="caixa-erro"></p></div>
             <div class="dentro-form">
                 <button id="esqueci-senha" onclick="esqueci()">Esqueci a senha!</button>
             </div>
-            <script src="./stript.js"></script>
+            <script src="./script.js"></script>
         </div>
     </section>

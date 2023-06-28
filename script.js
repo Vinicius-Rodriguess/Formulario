@@ -1,3 +1,5 @@
+const deuErro = document.querySelector('.caixa-erro');
+
 function enviar(){
     const username = document.querySelector('#username').value;
     const password = document.querySelector('#password').value;
@@ -5,22 +7,31 @@ function enviar(){
     const centro = document.querySelector('#centro').value;
 
     if (username === '') {
-        deuErro.innerHTML = `<p> Por favor, digite o nome de usuario. </p>`;        
+        deuErro.innerHTML = `Por favor, digite o nome de usuario.`; 
+        deuErro.classList.add('erro');   
+        deuErro.style.background = "red";    
     } else if (password === '') {
-        deuErro.innerHTML = `<p> Por favor, digite a senha. </p>`;        
+        deuErro.innerHTML = `Por favor, digite a senha.`;
+        deuErro.classList.add('erro');   
+        deuErro.style.background = "red";    
     } else if (departamento === '') {
-        deuErro.innerHTML = `<p> Por favor, selecione o departamento. </p>`;        
+        deuErro.innerHTML = `Por favor, selecione o departamento.`; 
+        deuErro.classList.add('erro');   
+        deuErro.style.background = "red";     
     } else if(centro === '') {
-        deuErro.innerHTML = `<p> Por favor, selecione o centro. </p>`;        
+        deuErro.innerHTML = `Por favor, selecione o centro.`;    
+        deuErro.classList.add('erro');  
+        deuErro.style.background = "red";   
     } else {
-        deuErro.innerHTML = `Seja Bem-Vindo! </p>`;
+        deuErro.innerHTML = `Seja Bem-Vindo!`;
+        deuErro.classList.add('erro');     
+        deuErro.style.background = "green";
     }
 }
 
-const deuErro = document.querySelector('.erro');
-
 function esqueci(){
-    deuErro.innerHTML = `<p> Por favor, selecione o departamento. </p>`
+    deuErro.innerHTML = `Contate o suporte!.`
+    deuErro.style.background = "blue"; 
 }
 
 
