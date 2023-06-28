@@ -30,7 +30,7 @@ function enviar(){
 }
 
 function esqueci(){
-    deuErro.innerHTML = `Contate o suporte!.`
+    deuErro.innerHTML = `Contate o suporte!`
     deuErro.style.background = "blue"; 
 }
 
