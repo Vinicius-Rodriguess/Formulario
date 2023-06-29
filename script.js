@@ -31,6 +31,7 @@ function enviar(){
 
 function esqueci(){
     deuErro.innerHTML = `Contate o suporte!`
+    deuErro.classList.add('erro'); 
     deuErro.style.background = "blue"; 
 }
 
