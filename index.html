@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./src/styles.css">
 </head>
 
 <body>
@@ -42,13 +42,18 @@
                     </span>
                 </div>
                 <div class="dentro-form">
-                    <button type="button" id="entrar" onclick="enviar()">Entrar</button>
+                    <button type="button" class="entrar">Entrar</button>
                 </div>
             </form>
-            <div class="diverro"><p class="caixa-erro"></p></div>
-            <div class="dentro-form">
-                <button id="esqueci-senha" onclick="esqueci()">Esqueci a senha!</button>
+            <div class="divCaixaMensagem">
+                <p class="caixa-erro"></p>
             </div>
-            <script src="./script.js"></script>
+            <div class="dentro-form">
+                <button class="esqueci-senha">Esqueci a senha!</button>
+            </div>
+            <script src="./src/script.js"></script>
         </div>
     </section>
+</body>
+
+</html>

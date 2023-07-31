@@ -25,7 +25,7 @@
     padding: 40px 30px;
 }
 
-#entrar {
+.entrar {
     padding: 5px;
     width: 200px;
     border-radius: 5px 10px;
@@ -36,7 +36,7 @@
     cursor: pointer;
 }
 
-#esqueci-senha{
+.esqueci-senha{
     padding: 3px;
     border: none;
     background-color: transparent;
@@ -44,13 +44,13 @@
     cursor: pointer;
 }
 
-#entrar:hover{
+.entrar:hover{
     background-color: rgb(221, 221, 221);
     color: black;
     transition: 0.2s;
 }
 
-#esqueci-senha:hover {
+.esqueci-senha:hover {
     border-bottom: solid white 1px;
 }
 
@@ -119,13 +119,13 @@ legend {
     margin-bottom: 5px;
 }
 
-.diverro {
+.divCaixaMensagem {
     text-align: center;
 }
 
-.erro {
+.caixaMensagem {
     font-size: 12px;
-    background-color: rgba(255, 0, 0, 0.9);
+    background-color: rgba(0, 26, 255, 0.9);
     border-radius: 10px;
     padding: 10px;
     color: rgb(255, 255, 255);
