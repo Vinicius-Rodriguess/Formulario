@@ -15,11 +15,11 @@ function enviarFormulario() {
     const password = document.querySelector('#password').value;
 
     if (username === '' || password === '') {
-        caixaMensagem.innerHTML = `Por favor, preencha todos os campos!.`;
+        caixaMensagem.innerHTML = `Por favor, preencha todos os campos!`;
         caixaMensagem.classList.add('caixaMensagem');
         caixaMensagem.style.background = "#FF0000";
     } else if (!isNaN(username)) {
-        caixaMensagem.innerHTML = `Por favor, usar letras e números!.`;
+        caixaMensagem.innerHTML = `Por favor, usar letras e números!`;
         caixaMensagem.classList.add('caixaMensagem');
         caixaMensagem.style.background = "#FF0000";
     } else {
